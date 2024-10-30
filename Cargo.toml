@@ -1,0 +1,27 @@
+[package]
+build = 'common/build/build.rs'
+edition = '2021'
+name = 'ton_dev_executor'
+version = '1.18.22'
+
+[dependencies]
+anyhow = '1.0'
+lazy_static = '1.4'
+log = '0.4'
+thiserror = '1.0'
+ton_dev_block = { git = 'https://github.com/ton-dev-dao/ton-dev-block.git', tag = '1.11.20' }
+ton_dev_vm = { git = 'https://github.com/ton-dev-dao/ton-dev-vm.git', tag = '2.2.21' }
+
+[features]
+gosh = [ 'ton_dev_vm/gosh', 'ton_dev_block/gosh' ]
+signature_with_id = [ 'ton_dev_block/signature_with_id', 'ton_dev_vm/signature_with_id' ]
+
+[[bench]]
+harness = false
+name = 'benchmarks'
+
+[lib]
+bench = false
+
+[profile]
+
