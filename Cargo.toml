@@ -1,7 +1,7 @@
 [package]
 build = 'common/build/build.rs'
 edition = '2021'
-name = 'ever_executor'
+name = 'ton_dev_executor'
 version = '1.18.22'
 
 [dependencies]
@@ -9,12 +9,12 @@ anyhow = '1.0'
 lazy_static = '1.4'
 log = '0.4'
 thiserror = '1.0'
-ever_block = { git = 'https://github.com/ton-dev-dao/ton-dev-block.git', tag = '1.11.20' }
-ever_vm = { git = 'https://github.com/ton-dev-dao/ton-dev-vm.git', tag = '2.2.21' }
+ton_dev_block = { git = 'https://github.com/ton-dev-dao/ton-dev-block.git', tag = '1.11.20' }
+ton_dev_vm = { git = 'https://github.com/ton-dev-dao/ton-dev-vm.git', tag = '2.2.21' }
 
 [features]
-gosh = [ 'ever_vm/gosh', 'ever_block/gosh' ]
-signature_with_id = [ 'ever_block/signature_with_id', 'ever_vm/signature_with_id' ]
+gosh = [ 'ton_dev_vm/gosh', 'ton_dev_block/gosh' ]
+signature_with_id = [ 'ton_dev_block/signature_with_id', 'ton_dev_vm/signature_with_id' ]
 
 [[bench]]
 harness = false
