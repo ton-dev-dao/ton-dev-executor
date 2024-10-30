@@ -11,8 +11,8 @@
 * limitations under the License.
 */
 
-use ever_block::GlobalCapabilities;
-use ever_block::{Cell, HashmapE, SliceData, Result};
+use ton_dev_block::GlobalCapabilities;
+use ton_dev_block::{Cell, HashmapE, SliceData, Result};
 use ever_vm::{
     executor::{Engine, gas::gas_state::Gas}, smart_contract_info::SmartContractInfo,
     stack::{Stack, StackItem, savelist::SaveList}

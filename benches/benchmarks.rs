@@ -13,9 +13,9 @@
 
 use criterion::{criterion_group, criterion_main, Criterion};
 use serde::{Serialize, Deserialize};
-use ever_block::{Deserializable, Account, Transaction, ConfigParams, Serializable, TransactionDescr};
+use ton_dev_block::{Deserializable, Account, Transaction, ConfigParams, Serializable, TransactionDescr};
 use ever_executor::{BlockchainConfig, ExecuteParams, OrdinaryTransactionExecutor, TickTockTransactionExecutor, TransactionExecutor};
-use ever_block::{error, fail, Result, UInt256, Cell, Status};
+use ton_dev_block::{error, fail, Result, UInt256, Cell, Status};
 use std::sync::{Arc, atomic::AtomicU64};
 
 #[path = "../src/tests/common/mod.rs"]

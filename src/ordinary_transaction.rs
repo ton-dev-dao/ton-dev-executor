@@ -20,13 +20,13 @@ use std::sync::atomic::AtomicU64;
 use std::sync::atomic::Ordering;
 #[cfg(feature = "timings")]
 use std::time::Instant;
-use ever_block::{
+use ton_dev_block::{
     AccStatusChange, Account, AccountStatus, AddSub, CommonMessage, CommonMsgInfo, Grams, Message,
     Serializable, TrBouncePhase, TrComputePhase, Transaction, TransactionDescr,
     TransactionDescrOrdinary, MASTERCHAIN_ID, GlobalCapabilities, 
     SERDE_OPTS_COMMON_MESSAGE, SERDE_OPTS_EMPTY
 };
-use ever_block::{error, fail, Result, HashmapType, SliceData};
+use ton_dev_block::{error, fail, Result, HashmapType, SliceData};
 use ever_vm::{
     boolean, int,
     stack::{integer::IntegerData, Stack, StackItem}, SmartContractInfo,

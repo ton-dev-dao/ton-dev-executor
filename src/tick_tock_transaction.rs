@@ -17,11 +17,11 @@ use crate::{
 };
 
 use std::sync::atomic::Ordering;
-use ever_block::{
+use ton_dev_block::{
     Account, CurrencyCollection, Grams, Message, TrComputePhase, Transaction, GlobalCapabilities,
     TransactionDescr, TransactionDescrTickTock, TransactionTickTock, Serializable, CommonMessage
 };
-use ever_block::{error, fail, Result, HashmapType, SliceData};
+use ton_dev_block::{error, fail, Result, HashmapType, SliceData};
 use ever_vm::{
     boolean, int,
     stack::{integer::IntegerData, Stack, StackItem}, SmartContractInfo,

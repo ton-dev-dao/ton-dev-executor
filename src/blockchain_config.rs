@@ -11,11 +11,11 @@
 * limitations under the License.
 */
 
-use ever_block::{
+use ton_dev_block::{
     ConfigParam18, ConfigParams, FundamentalSmcAddresses, GasLimitsPrices, GlobalCapabilities, Grams,
     MsgAddressInt, MsgForwardPrices, StorageInfo, StoragePrices, StorageUsedShort,
 };
-use ever_block::{Cell, Result, UInt256};
+use ton_dev_block::{Cell, Result, UInt256};
 
 pub const VERSION_BLOCK_REVERT_MESSAGES_WITH_ANYCAST_ADDRESSES: u32 = 8;
 pub const VERSION_BLOCK_NEW_CALCULATION_BOUNCED_STORAGE: u32 = 30;

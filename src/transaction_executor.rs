@@ -27,7 +27,7 @@ use std::{
         Arc,
     },
 };
-use ever_block::{ 
+use ton_dev_block::{
     AccStatusChange, Account, AccountStatus, AddSub, CommonMessage, CommonMsgInfo, ComputeSkipReason,
     CopyleftReward, CurrencyCollection, Deserializable, ExtraCurrencyCollection, GasLimitsPrices,
     GetRepresentationHash, GlobalCapabilities, Grams, HashUpdate, Message, MsgAddressInt,

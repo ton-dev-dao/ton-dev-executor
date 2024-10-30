@@ -11,7 +11,7 @@
 * limitations under the License.
 */
 
-use ever_block::ComputeSkipReason;
+use ton_dev_block::ComputeSkipReason;
 use ever_vm::stack::StackItem;
 
 #[derive(Debug, thiserror::Error, PartialEq)]
