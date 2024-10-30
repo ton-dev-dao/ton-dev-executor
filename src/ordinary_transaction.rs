@@ -27,7 +27,7 @@ use ton_dev_block::{
     SERDE_OPTS_COMMON_MESSAGE, SERDE_OPTS_EMPTY
 };
 use ton_dev_block::{error, fail, Result, HashmapType, SliceData};
-use ever_vm::{
+use ton_dev_vm::{
     boolean, int,
     stack::{integer::IntegerData, Stack, StackItem}, SmartContractInfo,
 };

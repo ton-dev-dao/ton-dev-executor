@@ -40,8 +40,8 @@ use ton_dev_block::{
     error, fail, AccountId, Cell, ExceptionCode, HashmapE, IBitstring, Result, UInt256,
     SliceData,
 };
-use ever_vm::executor::BehaviorModifiers;
-use ever_vm::{
+use ton_dev_vm::executor::BehaviorModifiers;
+use ton_dev_vm::{
     error::tvm_exception,
     executor::{gas::gas_state::Gas, IndexProvider},
     smart_contract_info::SmartContractInfo,
@@ -81,7 +81,7 @@ pub struct ExecuteParams {
     pub last_tr_lt: Arc<AtomicU64>,
     pub seed_block: UInt256,
     pub debug: bool,
-    pub trace_callback: Option<Arc<ever_vm::executor::TraceCallback>>,
+    pub trace_callback: Option<Arc<ton_dev_vm::executor::TraceCallback>>,
     pub index_provider: Option<Arc<dyn IndexProvider>>,
     pub behavior_modifiers: Option<BehaviorModifiers>,
     pub block_version: u32,

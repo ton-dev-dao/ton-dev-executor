@@ -12,7 +12,7 @@
 */
 
 use ton_dev_block::ComputeSkipReason;
-use ever_vm::stack::StackItem;
+use ton_dev_vm::stack::StackItem;
 
 #[derive(Debug, thiserror::Error, PartialEq)]
 pub enum ExecutorError {   

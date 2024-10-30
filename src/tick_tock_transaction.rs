@@ -22,7 +22,7 @@ use ton_dev_block::{
     TransactionDescr, TransactionDescrTickTock, TransactionTickTock, Serializable, CommonMessage
 };
 use ton_dev_block::{error, fail, Result, HashmapType, SliceData};
-use ever_vm::{
+use ton_dev_vm::{
     boolean, int,
     stack::{integer::IntegerData, Stack, StackItem}, SmartContractInfo,
 };
